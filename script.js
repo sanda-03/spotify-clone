@@ -3,7 +3,7 @@ let currentMusic= new Audio()
 
 // let ifclicked=true
 async function getImages() { //fetch images
-    let a = await fetch('spotify-clone/tree/main/images')
+    let a = await fetch('spotify-clone/images')
     let b = await a.text()
     let div = document.createElement('div')
     div.innerHTML = b
@@ -20,7 +20,7 @@ async function getImages() { //fetch images
     return images
 }
 async function getImages2() { 
-    let a = await fetch('spotify-clone/tree/main/artist-images')
+    let a = await fetch('spotify-clone/artist-images')
     let b = await a.text()
     let div = document.createElement('div')
     div.innerHTML = b
@@ -37,7 +37,7 @@ async function getImages2() {
     return images
 }
 async function getSongs() { //fetch songs
-    let a = await fetch('spotify-clone/tree/main/songs')
+    let a = await fetch('spotify-clone/songs')
     let b = await a.text()
     let div = document.createElement('div')
     div.innerHTML = b
